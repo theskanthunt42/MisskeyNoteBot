@@ -57,4 +57,4 @@ class Utils:
             return False, 'Failed to send note', send_the_note.status_code
         else:
             pass
-        return send_the_note.text
+            return send_the_note.text
