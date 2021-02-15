@@ -2,7 +2,7 @@ import json
 import requests
 
 
-class Utils(self):
+class Utils():
     def AddToken(self, uid, site, token):
         with open('TokenLib.json', 'r') as f:
             loaded_json = json.load(f.read())
