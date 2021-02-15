@@ -2,7 +2,7 @@ import json
 import requests
 
 
-class Utils:
+class Utils(self):
     def AddToken(self, uid, site, token):
         with open('TokenLib.json', 'r') as f:
             loaded_json = json.load(f.read())
@@ -58,3 +58,8 @@ class Utils:
         else:
             pass
             return send_the_note.text
+
+    def LoadConfig(self):
+        with open('config.json', 'r') as f:
+            configDict = json.load(f.read())
+        return configDict
